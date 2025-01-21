@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Axis Bank Credit Card Services</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="top-nav">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo-wrapper">
+                    <img src="images/axis-bank-logo.svg" alt="Axis Bank Logo" class="logo">
+                    <span class="logo-tagline">MOHD SAHIL width axisbank</span>
+                </div>
+                <div class="nav-links">
+                    <a href="#" class="contact-link"><i class="fas fa-phone"></i> 1860 500 5555</a>
+                    <a href="#" class="login-btn">Login</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="hero-section">
+        <div class="container">
+            <h1>Welcome to Axis Bank Credit Card Services</h1>
+            <p>Manage your credit card services with ease</p>
+        </div>
+    </div>
+
+    <div class="services-section">
+        <div class="container">
+            <div class="section-columns">
+                <!-- Left Column -->
+                <div class="main-column">
+                    <h2 class="section-title">Credit Card Services</h2>
+                    <div class="services-grid">
+                        <!-- Get Your Rewards -->
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-gift"></i>
+                            </div>
+                            <h3>Get Your Rewards</h3>
+                            <p>Redeem your reward points for exciting offers and cashback</p>
+                            <ul>
+                                <li>View available points</li>
+                                <li>Redeem for products</li>
+                                <li>Convert to cashback</li>
+                            </ul>
+                            <a href="rewards.html" class="action-btn">Redeem Now</a>
+                        </div>
+
+                        <!-- Limit Increase Application -->
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-arrow-up"></i>
+                            </div>
+                            <h3>Limit Increase Application</h3>
+                            <p>Apply for a credit limit increase on your card</p>
+                            <ul>
+                                <li>Quick approval process</li>
+                                <li>No additional documentation</li>
+                                <li>Instant decision</li>
+                            </ul>
+                            <a href="#" class="action-btn" onclick="openLimitIncrease()">Apply Now</a>
+                        </div>
+
+                        <!-- Card Protection -->
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <h3>Card Protection & Cancellation</h3>
+                            <p>Protect your card or request for cancellation</p>
+                            <ul>
+                                <li>Block lost card</li>
+                                <li>Report fraudulent transactions</li>
+                                <li>Request card cancellation</li>
+                            </ul>
+                            <a href="#" class="action-btn" onclick="openCardProtection()">Protect Card</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column -->
+                <div class="side-column">
+                    <div class="quick-actions-panel">
+                        <h3>Quick Actions</h3>
+                        <ul class="quick-actions-list">
+                            <li><a href="#"><i class="fas fa-file-invoice"></i> View Statement</a></li>
+                            <li><a href="#"><i class="fas fa-credit-card"></i> Pay Bill</a></li>
+                            <li><a href="#"><i class="fas fa-bell"></i> Set Alerts</a></li>
+                            <li><a href="#"><i class="fas fa-history"></i> Transaction History</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="offers-panel">
+                        <h3>Latest Offers</h3>
+                        <div class="offer-card">
+                            <i class="fas fa-tag"></i>
+                            <h4>10% Cashback</h4>
+                            <p>On all online shopping</p>
+                        </div>
+                        <div class="offer-card">
+                            <i class="fas fa-plane"></i>
+                            <h4>5X Rewards</h4>
+                            <p>On travel bookings</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-columns">
+                <!-- Left Column -->
+                <div class="main-column">
+                    <div class="services-grid">
+                        <!-- Card Activation -->
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <h3>Card Activation</h3>
+                            <p>Activate your new credit card instantly</p>
+                            <ul>
+                                <li>Quick activation process</li>
+                                <li>Set card PIN</li>
+                                <li>Enable online transactions</li>
+                            </ul>
+                            <a href="#" class="action-btn" onclick="openCardActivation()">Activate Now</a>
+                        </div>
+
+                        <!-- Loan Application -->
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-money-bill-wave"></i>
+                            </div>
+                            <h3>Loan Application</h3>
+                            <p>Convert purchases to EMI or get instant cash</p>
+                            <ul>
+                                <li>EMI conversion</li>
+                                <li>Cash advance</li>
+                                <li>Flexible tenure options</li>
+                            </ul>
+                            <a href="loan.html" class="action-btn">Apply for Loan</a>
+                        </div>
+
+                        <!-- Online Usage -->
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-globe"></i>
+                            </div>
+                            <h3>Online Usage Management</h3>
+                            <p>Manage your online transaction settings</p>
+                            <ul>
+                                <li>Set transaction limits</li>
+                                <li>Enable international usage</li>
+                                <li>Manage recurring payments</li>
+                            </ul>
+                            <a href="#" class="action-btn" onclick="openOnlineUsage()">Manage Settings</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column -->
+                <div class="side-column">
+                    <div class="support-panel">
+                        <h3>24/7 Support</h3>
+                        <div class="support-card">
+                            <i class="fas fa-headset"></i>
+                            <p>Call us at</p>
+                            <h4>1860 500 5555</h4>
+                        </div>
+                        <div class="support-links">
+                            <a href="#"><i class="fas fa-comments"></i> Live Chat</a>
+                            <a href="#"><i class="fas fa-envelope"></i> Email Support</a>
+                        </div>
+                    </div>
+
+                    <div class="security-tips-panel">
+                        <h3>Security Tips</h3>
+                        <ul class="security-tips-list">
+                            <li>Never share your PIN or OTP</li>
+                            <li>Keep your card details confidential</li>
+                            <li>Monitor transactions regularly</li>
+                            <li>Update contact details promptly</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact-section" id="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="contact-grid">
+                <div class="contact-form">
+                    <form id="contactForm" onsubmit="handleContactSubmit(event)">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name *</label>
+                                <input type="text" id="lastName" name="lastName" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="dob">Date of Birth *</label>
+                                <input type="date" id="dob" name="dob" required max="{{ currentDate }}">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="10 digit mobile number" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Address</label>
+                            <textarea id="address" name="address" rows="3"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="pincode">PIN Code</label>
+                            <input type="text" id="pincode" name="pincode" pattern="[0-9]{6}" placeholder="6 digit PIN code">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select Subject</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="application">New Card Application</option>
+                                <option value="support">Technical Support</option>
+                                <option value="complaint">Complaint</option>
+                                <option value="feedback">Feedback</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <div class="form-group checkbox-group">
+                            <label>
+                                <input type="checkbox" id="terms" name="terms" required>
+                                I agree to the terms and conditions *
+                            </label>
+                        </div>
+                        <button type="submit" class="action-btn">Send Message</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <div class="info-card">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Our Location</h3>
+                        <p>Axis Bank Head Office<br>Mumbai, Maharashtra<br>India</p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-phone-alt"></i>
+                        <h3>Call Us</h3>
+                        <p>1860 500 5555<br>+91 22 2425 2525</p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email Us</h3>
+                        <p>customer.service@axisbank.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Quick Links Section -->
+    <div class="quick-links-section">
+        <div class="container">
+            <h2>Quick Links</h2>
+            <div class="quick-links-grid">
+                <a href="#" class="quick-link">
+                    <i class="fas fa-file-invoice"></i>
+                    <span>View Statement</span>
+                </a>
+                <a href="#" class="quick-link">
+                    <i class="fas fa-credit-card"></i>
+                    <span>Pay Bill</span>
+                </a>
+                <a href="#" class="quick-link">
+                    <i class="fas fa-bell"></i>
+                    <span>Set Alerts</span>
+                </a>
+                <a href="#" class="quick-link">
+                    <i class="fas fa-history"></i>
+                    <span>Transaction History</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Eligibility Section -->
+    <div class="eligibility-section">
+        <div class="container">
+            <h2>Credit Card Eligibility</h2>
+            <div class="eligibility-content">
+                <div class="eligibility-criteria">
+                    <h3>Basic Eligibility Criteria</h3>
+                    <ul>
+                        <li>Age: 18-70 years</li>
+                        <li>Minimum Income: ₹3 Lakhs per annum</li>
+                        <li>Employment Status: Salaried/Self-employed</li>
+                        <li>Credit Score: 700+</li>
+                    </ul>
+                </div>
+                <div class="required-documents">
+                    <h3>Required Documents</h3>
+                    <ul>
+                        <li>Identity Proof (Aadhaar/PAN)</li>
+                        <li>Address Proof</li>
+                        <li>Income Proof</li>
+                        <li>Bank Statements (3 months)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <p><i class="fas fa-phone"></i> 1860 500 5555</p>
+                    <p><i class="fas fa-envelope"></i> customer.service@axisbank.com</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Important Links</h4>
+                    <ul>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Axis Bank. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Loan Application - Axis Bank Credit Card</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="top-nav">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo-wrapper">
+                    <a href="index.html">
+                        <img src="images/axis-bank-logo.svg" alt="Axis Bank Logo" class="logo">
+                        <span class="logo-tagline">Badhti Ka Naam Zindagi</span>
+                    </a>
+                </div>
+                <div class="nav-links">
+                    <a href="#" class="contact-link"><i class="fas fa-phone"></i> 1800-419-6969</a>
+                    <a href="#" class="login-btn">Login</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="service-page">
+            <h1><i class="fas fa-money-bill-wave"></i> Card Loan Application</h1>
+
+            <div class="loan-calculator">
+                <h2>Loan Calculator</h2>
+                <div class="calculator-form">
+                    <div class="form-group">
+                        <label for="loanAmount">Loan Amount (₹)</label>
+                        <input type="number" id="loanAmount" min="5000" max="500000" step="1000" value="50000">
+                    </div>
+                    <div class="form-group">
+                        <label for="tenure">Loan Tenure (months)</label>
+                        <select id="tenure">
+                            <option value="3">3 months</option>
+                            <option value="6">6 months</option>
+                            <option value="9">9 months</option>
+                            <option value="12" selected>12 months</option>
+                            <option value="18">18 months</option>
+                            <option value="24">24 months</option>
+                        </select>
+                    </div>
+                    <div class="calculator-result">
+                        <div class="result-item">
+                            <span>Monthly EMI</span>
+                            <strong>₹4,500</strong>
+                        </div>
+                        <div class="result-item">
+                            <span>Interest Rate</span>
+                            <strong>14% p.a.</strong>
+                        </div>
+                        <div class="result-item">
+                            <span>Total Amount</span>
+                            <strong>₹54,000</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="loan-options">
+                <h2>Choose Loan Type</h2>
+                <div class="options-grid">
+                    <div class="option-card">
+                        <i class="fas fa-credit-card"></i>
+                        <h3>EMI on Purchase</h3>
+                        <p>Convert your recent purchases into easy EMIs</p>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-check"></i> Minimum purchase: ₹2,500</li>
+                            <li><i class="fas fa-check"></i> Up to 24 months tenure</li>
+                            <li><i class="fas fa-check"></i> Instant conversion</li>
+                        </ul>
+                        <button class="action-btn">Convert to EMI</button>
+                    </div>
+
+                    <div class="option-card">
+                        <i class="fas fa-money-check-alt"></i>
+                        <h3>Instant Cash Loan</h3>
+                        <p>Get instant cash transfer to your bank account</p>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-check"></i> Up to 80% of credit limit</li>
+                            <li><i class="fas fa-check"></i> Competitive interest rates</li>
+                            <li><i class="fas fa-check"></i> Quick disbursement</li>
+                        </ul>
+                        <button class="action-btn">Apply Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="loan-application-form">
+                <h2>Loan Application Form</h2>
+                <form id="loanForm">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="cardNumber">Credit Card Number</label>
+                            <input type="text" id="cardNumber" required maxlength="16">
+                        </div>
+                        <div class="form-group">
+                            <label for="name">Cardholder Name</label>
+                            <input type="text" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="mobile">Mobile Number</label>
+                            <input type="tel" id="mobile" required pattern="[0-9]{10}">
+                        </div>
+                        <div class="form-group">
+                            <label for="loanPurpose">Loan Purpose</label>
+                            <select id="loanPurpose" required>
+                                <option value="">Select Purpose</option>
+                                <option value="travel">Travel</option>
+                                <option value="education">Education</option>
+                                <option value="medical">Medical</option>
+                                <option value="shopping">Shopping</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="employmentType">Employment Type</label>
+                            <select id="employmentType" required>
+                                <option value="">Select Type</option>
+                                <option value="salaried">Salaried</option>
+                                <option value="self-employed">Self Employed</option>
+                                <option value="business">Business Owner</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" required>
+                            I agree to the terms and conditions and authorize Axis Bank to check my credit history
+                        </label>
+                    </div>
+                    <button type="submit" class="submit-btn">Submit Application</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <p><i class="fas fa-phone"></i> 1800-419-6969</p>
+                    <p><i class="fas fa-envelope"></i> customer.service@axisbank.com</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Important Links</h4>
+                    <ul>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Axis Bank. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
